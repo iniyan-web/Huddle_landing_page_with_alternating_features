@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+
+.get-started {
+  height: 15rem;
+  position: relative;
+
+  &-card {
+    width: 55%;
+    height: 12.5rem;
+    padding-top: 2.5rem;
+    text-align: center;
+    background-color: $btn-color-1;
+    position: absolute;
+    z-index: 1;
+    top: 6.8rem;
+    left: 22.5%;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 10px 0 $card-shadow;
+
+    h2 {
+      font-size: 1.8rem;
+      padding-bottom: 0.8em;
+    }
+  }
+}

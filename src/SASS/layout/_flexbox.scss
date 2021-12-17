@@ -1,0 +1,11 @@
+@use "../abstracts/mixins" as *;
+
+.hero-content,
+.feature-cards,
+.feature-card,
+footer .main-content,
+footer .contact-info,
+footer .footer-links,
+.footer-icons {
+  @include flex-box(center, space-between);
+}

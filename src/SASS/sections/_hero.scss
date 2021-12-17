@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.hero {
+  height: 36rem;
+  background: url("../../images/bg-hero-desktop.svg") top left no-repeat
+    $bg-color;
+  background-size: cover;
+  padding: 2rem 3.5rem;
+
+  &-text {
+    h1 {
+      font-size: 2rem;
+      padding: 0 20% 1em 0;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $text-color-1;
+      padding: 0 8% 1.8em 0;
+    }
+  }
+
+  &-img {
+    width: 54%;
+  }
+}

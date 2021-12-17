@@ -1,0 +1,15 @@
+@mixin font-poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+@mixin font-open-sans($font-weight) {
+  font-family: "Open Sans", sans-serif;
+  font-weight: $font-weight;
+}
+
+@mixin flex-box($align-position, $justify-position) {
+  display: flex;
+  align-items: $align-position;
+  justify-content: $justify-position;
+}

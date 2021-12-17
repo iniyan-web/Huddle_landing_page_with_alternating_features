@@ -1,0 +1,110 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+footer {
+  height: 26.5rem;
+  background-color: $text-color-1;
+  padding: 8rem 4rem 3rem 5rem;
+  position: relative;
+
+  & * {
+    color: $btn-color-1;
+  }
+
+  .main-content {
+    padding-right: 14%;
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .contact {
+      flex-basis: 35%;
+
+      .footer-logo {
+        margin-bottom: 2rem;
+      }
+
+      &-info {
+        height: 8.5rem;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+
+        p {
+          display: inline-block;
+          margin-left: 1rem;
+        }
+
+        & > *:not(:last-child) {
+          margin-bottom: 1em;
+        }
+
+        .address {
+          height: 50%;
+        }
+
+        .address-icon {
+          margin-top: 10px;
+        }
+
+        .address-info {
+          position: relative;
+          top: -1.5rem;
+          left: 1rem;
+        }
+      }
+    }
+
+    .footer-links {
+      width: 16rem;
+      margin-top: 1.8rem;
+
+      p:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      .footer-link-set1 p:not(:last-child),
+      .footer-link-set2 p:not(:last-child) {
+        margin-bottom: 1em;
+      }
+    }
+
+    .footer-icons {
+      width: 7rem;
+      margin-top: -2.8rem;
+
+      .footer-icon {
+        background-color: $btn-color-1;
+        display: inline-block;
+        mask-size: cover;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $btn-color-2;
+        }
+      }
+
+      .fb {
+        mask: url("../../images/logo-facebook.svg");
+      }
+
+      .twitter {
+        mask: url("../../images/logo-twitter.svg");
+      }
+
+      .insta {
+        mask: url("../../images/logo-instagram.svg");
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+  }
+}

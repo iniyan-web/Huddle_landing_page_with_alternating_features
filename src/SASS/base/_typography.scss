@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+html {
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  @include font-poppins;
+  color: $text-color-1;
+}
+
+p {
+  @include font-open-sans(400);
+  color: $text-color-2;
+}

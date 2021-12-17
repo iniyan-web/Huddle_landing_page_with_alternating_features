@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+
+.feature-cards {
+  padding: 5rem 4rem 0;
+  flex-flow: column nowrap;
+  gap: 1.5rem;
+
+  .feature-card {
+    width: 100%;
+    padding: 2.5rem 1.5rem 2.5rem 5rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 6px 0 $card-shadow;
+
+    .fc-text {
+      flex-basis: 45%;
+
+      .title {
+        font-size: 1.6rem;
+        padding-bottom: 0.4em;
+      }
+
+      .info {
+        font-size: 1rem;
+        line-height: 1.4em;
+      }
+    }
+
+    .fc-img {
+      width: 40%;
+    }
+  }
+}

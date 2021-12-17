@@ -1,0 +1,452 @@
+@use "../abstracts/variables" as *;
+
+@media screen and (max-width: 1326px) {
+  footer {
+    .main-content {
+      padding: 0;
+
+      .contact {
+        flex-basis: 32%;
+      }
+
+      .footer-links {
+        width: 20rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1239px) {
+  footer {
+    .contact-info {
+      .phone {
+        margin-top: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .get-started-card {
+    height: 11rem;
+    padding-top: 2rem;
+    top: 8rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .get-started-btn {
+      font-size: 1rem;
+      width: 18rem;
+      height: 3rem;
+      padding: 0.5rem 4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 17px;
+  }
+
+  footer {
+    .main-content {
+      .footer-links {
+        width: 16rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .hero {
+    height: 28rem;
+    padding: 2rem 2.5rem;
+
+    .header-logo {
+      width: 10rem;
+    }
+
+    &-text {
+      h1 {
+        font-size: 1.8rem;
+        padding-right: 5%;
+      }
+
+      p {
+        font-size: 0.8rem;
+        padding-right: 5%;
+      }
+    }
+  }
+
+  .header-btn {
+    width: 8rem;
+    height: 2.25rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .hero-btn {
+    font-size: 0.8rem;
+    width: 12rem;
+    height: 2.5rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .feature-cards {
+    padding: 3rem 2.5rem 0;
+
+    .feature-card {
+      padding: 2rem 1rem 2rem 3rem;
+
+      .fc-text {
+        .title {
+          font-size: 1.4rem;
+        }
+
+        .info {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .get-started {
+    height: 10rem;
+
+    &-card {
+      height: 10rem;
+      padding-top: 1.8rem;
+      top: 3.5rem;
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      .get-started-btn {
+        font-size: 0.8rem;
+        width: 15rem;
+        height: 3rem;
+        padding: 0.5rem 3rem;
+      }
+    }
+  }
+
+  footer {
+    height: 24rem;
+    padding: 6rem 2.5rem 2.5rem;
+
+    .main-content {
+      p {
+        font-size: 0.8rem;
+      }
+
+      .contact {
+        .footer-logo {
+          width: 10rem;
+        }
+
+        .contact-info {
+          .phone {
+            margin-top: 2em;
+          }
+        }
+      }
+
+      .footer-links {
+        width: 14rem;
+        margin-top: 1.4rem;
+      }
+
+      .footer-icons {
+        width: 6rem;
+        margin-top: -2.5rem;
+
+        .footer-icon {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 0.7rem;
+      right: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .hero {
+    height: 42rem;
+    padding: 2rem;
+
+    .hero-content {
+      text-align: center;
+      flex-flow: column nowrap;
+
+      .hero-text {
+        h1,
+        p {
+          padding-right: 0;
+        }
+      }
+
+      .hero-btn {
+        margin-bottom: 2rem;
+      }
+
+      .hero-img {
+        width: 25rem;
+      }
+    }
+  }
+
+  .feature-cards {
+    .feature-card {
+      flex-flow: column-reverse nowrap;
+      padding: 3rem 2rem 2rem;
+
+      .fc-text {
+        margin-top: 2.5rem;
+        text-align: center;
+      }
+
+      .fc-img {
+        width: 18rem;
+      }
+    }
+  }
+
+  .get-started {
+    height: 12rem;
+
+    &-card {
+      width: 95%;
+      height: 10rem;
+      top: 5.5rem;
+      left: 2.5%;
+
+      .get-started-btn {
+        width: 16rem;
+        padding: 0.5rem 4rem;
+      }
+    }
+  }
+
+  footer {
+    height: 37rem;
+    padding: 6rem 2.5rem 2rem;
+
+    .main-content,
+    .contact-info,
+    .footer-links {
+      flex-flow: column nowrap;
+    }
+
+    .main-content {
+      .contact {
+        .footer-logo {
+          margin-bottom: 0.5em;
+        }
+
+        .contact-info {
+          .address {
+            margin-bottom: 0;
+            padding-right: 30%;
+          }
+
+          .phone {
+            margin-top: 0;
+          }
+        }
+      }
+
+      .footer-links {
+        width: 100%;
+        align-items: flex-start;
+
+        .footer-link-set1 p,
+        .footer-link-set2 p {
+          margin-bottom: 1em;
+        }
+      }
+
+      .footer-icons {
+        width: 7rem;
+        margin-top: 1rem;
+      }
+    }
+
+    .copyright {
+      position: static;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero {
+    height: 44rem;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  footer {
+    .main-content {
+      .contact {
+        .contact-info {
+          .address {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero {
+    height: 37rem;
+    background: url("../../images/bg-hero-mobile.svg") top left no-repeat
+      $bg-color;
+    background-size: cover;
+    padding: 1rem;
+
+    .header-logo {
+      width: 6rem;
+    }
+
+    .hero-content {
+      .hero-text {
+        h1 {
+          font-size: 1.5rem;
+          padding-bottom: 0.8em;
+        }
+      }
+
+      .hero-img {
+        width: 18rem;
+      }
+    }
+  }
+
+  .header-btn {
+    width: 5rem;
+    font-size: 0.6rem;
+    height: 1.5rem;
+    padding: 0.25rem 1rem;
+  }
+
+  .hero-btn {
+    width: 14rem;
+    font-size: 0.7rem;
+    padding: 0.5rem 3.5rem;
+  }
+
+  .feature-cards {
+    padding: 2.5rem 0.5rem 0;
+
+    .feature-card {
+      padding: 2rem 1rem;
+
+      .fc-text {
+        .title {
+          font-size: 1.2rem;
+        }
+
+        .info {
+          line-height: 1.5em;
+        }
+      }
+
+      .fc-img {
+        width: 13rem;
+      }
+    }
+  }
+
+  .get-started {
+    height: 10rem;
+
+    &-card {
+      height: 8rem;
+      top: 5rem;
+
+      h2 {
+        font-size: 0.9rem;
+        padding-bottom: 0.8em;
+      }
+
+      .get-started-btn {
+        width: 12rem;
+        height: 2.2rem;
+        font-size: 0.7rem;
+        padding: 0.7rem 2.5rem;
+      }
+    }
+  }
+
+  footer {
+    padding: 6rem 0.5rem 1rem;
+
+    .main-content {
+      .contact {
+        .footer-logo {
+          width: 8rem;
+        }
+
+        .contact-info {
+          .address-info {
+            width: 90%;
+            left: 10px;
+            top: 0.2rem;
+          }
+
+          .address-icon {
+            position: relative;
+            top: -1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  footer {
+    .main-content {
+      .contact {
+        .contact-info {
+          .address-info {
+            width: 88%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 335px) {
+  footer {
+    .main-content {
+      .contact {
+        .contact-info {
+          .address {
+            margin-bottom: 1rem;
+
+            &-info {
+              width: 85%;
+              left: 5px;
+            }
+
+            &-icon {
+              top: -3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

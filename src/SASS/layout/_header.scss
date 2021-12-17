@@ -1,0 +1,11 @@
+@use "../abstracts/mixins" as *;
+
+header {
+  width: 100%;
+  @include flex-box(center, space-between);
+  margin-bottom: 3.5rem;
+
+  .#{&}-logo {
+    width: 12rem;
+  }
+}
